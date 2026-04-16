@@ -2,13 +2,20 @@ services:
   - type: web
     name: booking-website-api
     env: node
+    region: singapore
     plan: free
-    buildCommand: cd server && npm install
-    startCommand: cd server && npm start
+    buildCommand: npm install --prefix server
+    startCommand: node server/server.js
     envVars:
       - key: NODE_ENV
         value: production
-      - key: MONGODB_URI
-        fromDatabase:
-          name: booking-db
-          property: connectionString
+      - key: PORT
+        value: 5000
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false
