@@ -1,0 +1,82 @@
+.transaction-page {
+  padding: 20px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.transaction-page h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  width: max-content;
+}
+
+.transaction-table th {
+  background-color: #27a9e1;
+  color: white;
+}
+
+.transaction-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.transaction-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style cho Status */
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.Booked {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status.Checkin {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.Checkout {
+  background-color: #e2e3f3;
+  color: #383d73;
+}
+
+.cancel-btn {
+  margin-top: 5px;
+  padding: 4px 10px;
+  font-size: 15px;
+  color: white;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 35px;
+  margin-left: 5px;
+}
+.cancel-btn:hover {
+  background-color: #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  margin-bottom: 10px;
+}

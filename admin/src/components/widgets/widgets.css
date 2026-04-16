@@ -1,0 +1,41 @@
+.widget {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  height: 100px;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  background-color: white;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.counter {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.2);
+  color: crimson;
+}

@@ -1,0 +1,79 @@
+.roomListContainer {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.roomListTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.addNewButton {
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid #28a745;
+  border-radius: 5px;
+  color: #28a745;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.addNewButton:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.roomTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.roomTable th,
+.roomTable td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.roomTable th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+.roomTable tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.deleteButton {
+  padding: 6px 12px;
+  border: 1px dashed #ff4d4d;
+  background-color: transparent;
+  color: #ff4d4d;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+
+.deleteButton:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.pagination {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 14px;
+  color: gray;
+}
+
+.roomBtn {
+  width: 150px;
+}

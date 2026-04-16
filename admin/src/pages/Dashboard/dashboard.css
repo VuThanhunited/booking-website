@@ -1,0 +1,21 @@
+.dashboard {
+  display: flex;
+  width: 100%;
+}
+
+.dashboardContainer {
+  flex: 6;
+}
+
+.listContainer {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.listTitle {
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 10px;
+}

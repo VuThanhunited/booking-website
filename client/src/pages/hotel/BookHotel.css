@@ -1,0 +1,158 @@
+.booking-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.hotel-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e88e5;
+}
+
+.booking-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  min-width: 320px;
+}
+
+.date-picker-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.datepicker {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.room-card {
+  background-color: #f5f8fd;
+  border: 1px solid #d0d9e3;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.room-card:hover {
+  box-shadow: 0 8px 20px rgb(48, 153, 239);
+}
+
+.room-info {
+  margin-bottom: 10px;
+}
+
+.room-info strong {
+  font-size: 1.1rem;
+  color: #1565c0;
+}
+
+.room-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.room-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.room-number-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #e3f2fd;
+  border: 1px solid #90caf9;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.room-number-label:hover {
+  background-color: #bbdefb;
+}
+
+.room-number-label input {
+  cursor: pointer;
+  accent-color: #1565c0;
+}
+
+.info-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.payment-select {
+  background-color: #fff;
+  width: 106%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.total-price {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.reserve-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.reserve-button:hover {
+  background-color: #1565c0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.info-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
