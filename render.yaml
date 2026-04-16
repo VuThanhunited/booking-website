@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: booking-website-api
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        fromDatabase:
+          name: booking-db
+          property: connectionString
