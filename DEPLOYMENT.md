@@ -33,14 +33,16 @@
 
 ### Update CORS
 After Backend is deployed:
-1. Get the Render URL
-2. Get the Vercel URL for frontend
+1. Get the Render URL (e.g., `https://booking-website-9gq9.onrender.com`)
+2. Get the Vercel URL for frontend (e.g., `https://booking-website-drab-eight.vercel.app`)
 3. Update `server/server.js` - Add URLs to `allowedOrigins` array:
    ```javascript
    const allowedOrigins = [
      "http://localhost:3000",
      "http://localhost:3001",
-     "https://your-vercel-app.vercel.app",
+     "https://booking-website-722d4.web.app",
+     "https://booking-admin-1a8c2.web.app",
+     "https://booking-website-drab-eight.vercel.app",
      "https://your-render-backend.onrender.com",
    ];
    ```
