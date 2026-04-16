@@ -21,8 +21,14 @@ const PropertyList = () => {
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/hotels/countByType`)
-      .then((res) => setData(res.data))
-      .catch((err) => console.log(err));
+      .then((res) => {
+        const types = Array.isArray(res.data) ? res.data : [];
+        setData(types);
+      })
+      .catch((err) => {
+        console.log(err);
+        setData([]);
+      });
   }, []);
 
   return (

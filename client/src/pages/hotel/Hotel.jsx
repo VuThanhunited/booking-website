@@ -46,12 +46,13 @@ const Hotel = () => {
 
   const handleMove = (direction) => {
     let newSlideNumber;
+    const photoLength = hotel?.photos?.length || 0;
     if (direction === "l") {
       newSlideNumber =
-        slideNumber === 0 ? hotel.photos.length - 1 : slideNumber - 1;
+        slideNumber === 0 ? photoLength - 1 : slideNumber - 1;
     } else {
       newSlideNumber =
-        slideNumber === hotel.photos.length - 1 ? 0 : slideNumber + 1;
+        slideNumber === photoLength - 1 ? 0 : slideNumber + 1;
     }
     setSlideNumber(newSlideNumber);
   };
@@ -77,7 +78,7 @@ const Hotel = () => {
             />
             <div className="sliderWrapper">
               <img
-                src={hotel.photos[slideNumber]}
+                src={hotel.photos?.[slideNumber] || ""}
                 alt=""
                 className="sliderImg"
               />
@@ -108,7 +109,7 @@ const Hotel = () => {
           <span className="hotelDistance">{hotel.locationHighlight}</span>
           <span className="hotelPriceHighlight">{hotel.promotion}</span>
           <div className="hotelImages">
-            {hotel.photos.map((photo, i) => (
+            {Array.isArray(hotel.photos) && hotel.photos.map((photo, i) => (
               <div className="hotelImgWrapper" key={i}>
                 <img
                   onClick={() => handleOpen(i)}

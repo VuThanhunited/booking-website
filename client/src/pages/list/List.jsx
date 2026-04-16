@@ -37,10 +37,12 @@ const List = () => {
             },
           }
         );
-        setHotels(res.data);
-        console.log(res.data);
+        const hotelsData = Array.isArray(res.data) ? res.data : [];
+        setHotels(hotelsData);
+        console.log(hotelsData);
       } catch (err) {
         console.log(err);
+        setHotels([]);
       }
     };
     fetchHotels();

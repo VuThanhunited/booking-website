@@ -10,10 +10,14 @@ const FeaturedProperties = () => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/hotels/top-rated`)
       .then((res) => {
-        const sorted = res.data.sort((a, b) => b.rating - a.rating);
+        const hotels = Array.isArray(res.data) ? res.data : [];
+        const sorted = hotels.sort((a, b) => b.rating - a.rating);
         setData(sorted);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        setData([]);
+      });
   }, []);
 
   return (

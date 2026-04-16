@@ -8,8 +8,14 @@ const Featured = () => {
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/hotels/countByCity`)
-      .then((res) => setData(res.data))
-      .catch((err) => console.log(err));
+      .then((res) => {
+        const cities = Array.isArray(res.data) ? res.data : [];
+        setData(cities);
+      })
+      .catch((err) => {
+        console.log(err);
+        setData([]);
+      });
   }, []);
 
   return (
