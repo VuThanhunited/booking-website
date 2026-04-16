@@ -1,0 +1,37 @@
+{
+  "services": [
+    {
+      "type": "web",
+      "name": "booking-website-api",
+      "repo": "https://github.com/VuThanhunited/booking-website",
+      "buildCommand": "npm install --prefix server",
+      "startCommand": "node server/server.js",
+      "envVars": [
+        {
+          "key": "MONGO_URI",
+          "sync": false
+        },
+        {
+          "key": "JWT_SECRET",
+          "sync": false
+        },
+        {
+          "key": "EMAIL_USER",
+          "sync": false
+        },
+        {
+          "key": "EMAIL_PASS",
+          "sync": false
+        },
+        {
+          "key": "NODE_ENV",
+          "value": "production"
+        },
+        {
+          "key": "PORT",
+          "value": "5000"
+        }
+      ]
+    }
+  ]
+}
