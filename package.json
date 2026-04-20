@@ -1,6 +1,14 @@
 {
-  "dependencies": {
-    "git": "^0.1.5",
-    "nodemailer": "^7.0.3"
+  "name": "booking-website",
+  "version": "1.0.0",
+  "description": "Booking website - Hotel booking application",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "dev": "cd server && npm run dev",
+    "install-all": "npm install && cd server && npm install && cd ../admin && npm install && cd ../client && npm install"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
