@@ -4,8 +4,8 @@
       "type": "web",
       "name": "booking-website-api",
       "repo": "https://github.com/VuThanhunited/booking-website",
-      "buildCommand": "cd server && npm install",
-      "startCommand": "cd server && npm start",
+      "buildCommand": "npm install --prefix server",
+      "startCommand": "node server/server.js",
       "envVars": [
         {
           "key": "MONGO_URI",
