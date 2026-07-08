@@ -1,0 +1,109 @@
+.newHotelContainer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.newHotelWrapper {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newHotelTitle {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  border: 1px solid rgb(190, 186, 186);
+  border-radius: 5px;
+  height: 30px;
+  padding-left: 10px;
+  padding-top: 5px;
+  color: rgb(198, 193, 193);
+}
+
+.newHotelForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.newHotelItem {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.newHotelItem label {
+  margin-bottom: 5px;
+  color: gray;
+  font-size: 14px;
+}
+
+.newHotelItem input,
+.newHotelItem textarea,
+.newHotelItem select {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 14px;
+  background: transparent;
+}
+
+/* Cho textarea gọn gàng */
+.newHotelItem textarea {
+  min-height: 80px;
+}
+
+/* Đặc biệt cho <select multiple> */
+.newHotelItem select[multiple] {
+  height: 120px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+/* Hover cho trải nghiệm tốt hơn */
+.newHotelItem select[multiple]:hover {
+  border-color: #888;
+  cursor: pointer;
+}
+
+/* Nếu có dùng khối riêng cho room chọn */
+.newHotelRooms {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.newHotelRooms label {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.newHotelRooms textarea,
+.newHotelRooms select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 14px;
+  background: transparent;
+  min-height: 80px;
+}
+
+.newHotelButton {
+  width: 150px;
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+  align-self: center;
+}

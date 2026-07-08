@@ -1,0 +1,147 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 20px 40px 20px;
+}
+
+.listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 24px;
+}
+
+.listSearch {
+  flex: 1;
+  background-color: #febb02;
+  color: #1a1a1a;
+  padding: 16px;
+  border-radius: 8px;
+  position: sticky;
+  top: 84px; /* offset for sticky navbar */
+  height: max-content;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid #e7e7e7;
+}
+
+.lsTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.lsItem > label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.lsItem > input {
+  height: 38px;
+  border: 1px solid transparent;
+  padding: 0 10px;
+  background-color: white;
+  border-radius: 4px;
+  color: #1a1a1a;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.lsItem > input:focus {
+  border-color: #006ce4;
+}
+
+.lsItem > span {
+  height: 38px;
+  padding: 0 10px;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.lsItem > span:hover {
+  background-color: #f2f2f2;
+}
+
+.lsOptions {
+  padding: 4px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lsOptionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #1a1a1a;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.lsOptionInput {
+  width: 60px;
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
+  color: #1a1a1a;
+  text-align: center;
+  font-weight: 600;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.lsOptionInput:focus {
+  border-color: #006ce4;
+}
+
+.listSearch > button {
+  padding: 12px;
+  background-color: #006ce4;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.listSearch > button:hover {
+  background-color: #005bbf;
+}
+
+.listResult {
+  flex: 3;
+}
+
+.noResults {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #474747;
+  padding: 40px;
+}

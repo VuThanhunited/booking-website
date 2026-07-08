@@ -1,0 +1,67 @@
+.transactionListContainer {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.transactionListTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.transactionTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transactionTable th,
+.transactionTable td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.transactionTable th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+.transactionTable tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Status styles */
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.booked {
+  background-color: #fce4e4;
+  color: #ff6b6b;
+}
+
+.status.checkin {
+  background-color: #e0f7e4;
+  color: #00c851;
+}
+
+.status.checkout {
+  background-color: #ede7f6;
+  color: #6a1b9a;
+}
+
+.pagination {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 14px;
+  color: gray;
+}

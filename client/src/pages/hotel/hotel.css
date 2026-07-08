@@ -1,0 +1,256 @@
+.hotelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 20px 60px 20px;
+}
+
+.hotelWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.hotelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.hotelHeaderTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bookNow {
+  border: none;
+  padding: 10px 18px;
+  background-color: #006ce4;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.bookNow:hover {
+  background-color: #005bbf;
+}
+
+.hotelTitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.hotelAddress {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.hotelAddressIcon {
+  color: #006ce4;
+}
+
+.hotelShowMap {
+  color: #006ce4;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hotelShowMap:hover {
+  text-decoration: underline;
+}
+
+.hotelDistance {
+  color: #008009;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.hotelPriceHighlight {
+  color: #008009;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.hotelImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.hotelImgWrapper {
+  width: calc(33.333% - 8px);
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.hotelImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.hotelImg:hover {
+  transform: scale(1.04);
+  filter: brightness(1.05);
+}
+
+.hotelDetails {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.hotelDetailsTexts {
+  flex: 3;
+}
+
+.hotelDetailsTexts h1 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.hotelDesc {
+  font-size: 15px;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.hotelDetailsPrice {
+  flex: 1;
+  background-color: #f0f4fa;
+  border: 1px solid #d0e0f5;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  height: max-content;
+}
+
+.hotelDetailsPrice > h1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.hotelDetailsPrice > span {
+  font-size: 13px;
+  color: #474747;
+  line-height: 1.4;
+}
+
+.hotelDetailsPrice > h2 {
+  font-weight: 500;
+  font-size: 15px;
+  color: #1a1a1a;
+  margin: 8px 0;
+}
+
+.hotelDetailsPrice > h2 > b {
+  font-size: 22px;
+  color: #1a1a1a;
+}
+
+.hotelDetailsPrice > button {
+  border: none;
+  padding: 10px 18px;
+  background-color: #006ce4;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.hotelDetailsPrice > button:hover {
+  background-color: #005bbf;
+}
+
+.slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(13, 30, 54, 0.95);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 1024px;
+}
+
+.sliderImg {
+  width: 85%;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+}
+
+.close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.close:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.arrow {
+  margin: 20px;
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: var(--transition);
+  user-select: none;
+}
+
+.arrow:hover {
+  color: white;
+  transform: scale(1.1);
+}

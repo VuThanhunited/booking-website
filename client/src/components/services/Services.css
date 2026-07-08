@@ -1,0 +1,150 @@
+.serviceSection {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.serviceTitle {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--primary-color);
+  letter-spacing: -0.5px;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.serviceCard {
+  background-color: white;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.serviceCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.serviceCardImg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.serviceCard:hover .serviceCardImg {
+  filter: brightness(1.05);
+}
+
+.serviceCardContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.serviceCardContent h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.serviceCardDesc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.serviceCardSpecs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.serviceSpecBadge {
+  font-size: 11px;
+  background-color: var(--bg-color);
+  color: var(--text-muted);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.serviceCardPriceBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.serviceCardPrice {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.serviceCardPrice small {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.serviceCardBtn {
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  border: none;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.serviceCardBtn:hover {
+  background-color: var(--secondary-hover);
+}
+
+/* Flight Details Styling */
+.flightDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flightRoute {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.flightArrow {
+  color: var(--secondary-color);
+  font-size: 12px;
+}
+
+.flightInfo {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}

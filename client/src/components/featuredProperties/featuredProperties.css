@@ -1,0 +1,99 @@
+.fp {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.fpItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.fpItem:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.fpImgContainer {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fpImg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fpItem:hover .fpImg {
+  transform: scale(1.05);
+}
+
+.fpName {
+  padding: 16px 16px 4px 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.fpName a {
+  color: var(--text-main);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.fpName a:hover {
+  color: var(--secondary-color);
+}
+
+.fpCity {
+  padding: 0 16px;
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.fpPrice {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.fpRating {
+  padding: 0 16px 16px 16px;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.fpRating > button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 4px 4px 4px 0;
+  margin-right: 8px;
+}
+
+.fpRating > span {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-main);
+}
