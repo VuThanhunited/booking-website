@@ -26,7 +26,7 @@ const allowedOrigins = [
 app.use(
   cors({
     origin: (origin, callback) => {
-      if (!origin || allowedOrigins.includes(origin)) {
+      if (!origin || allowedOrigins.includes(origin) || origin.endsWith(".vercel.app")) {
         callback(null, true);
       } else if (process.env.NODE_ENV === "production") {
         // Trong production, chỉ cho phép từ allowedOrigins
